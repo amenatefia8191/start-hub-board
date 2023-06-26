@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-------   tailwind CDN link     --->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-------  Boxicon CDN link for icon     -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <!------    Header section ----->
+    <header class="pt-6 pb-8 pr-1 pl-1 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <label for="logo">
+          <img src="/img/start hub.jpg" alt="the logo" class="w-32" />
+        </label>
+
+        <div class="flex items-center gap-3">
+          <div>
+            <img
+              src="/img/avater-2.jpg"
+              alt="an image"
+              class="w-9 rounded-full"
+            />
+          </div>
+          <div>
+            <h5 class="capitalize text-sm">
+              owai owai
+              <span
+                class="py-px bg-customgreen bg-green-400 pr-3 pl-3 rounded-full text-xs text-white"
+                >active</span
+              >
+            </h5>
+            <p class="text-xs text-gray-500">
+              it's another day to be would class
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 pr-2">
+        <div class="border max-w-fit rounded-md flex items-center">
+          <div class="flex items-center gap-2 p-1">
+            <button
+              class="bg-blue-800 py-px pl-2 pr-2 text-white border rounded-md text-base font-light"
+            >
+              SSN <i class="bx bxs-lock"></i>
+            </button>
+            <p class="text-gray-500 text-xs">oiuVHTYYm6EWTIO</p>
+          </div>
+
+          <button class="text-gray-400 border py-px pr-3 pl-4 max-h-full">
+            <i class="bx bxs-chat"></i>
+          </button>
+        </div>
+
+        <form class="flex items-center gap-2 w-72 rounded-full bg-gray-100 h-8">
+          <button id="search-Icon" class="pointer">
+            <i class="bx bx-search pl-4"></i>
+          </button>
+          <input
+            type="text"
+            id="searchInput"
+            name="search"
+            placeholder="search Courses,Document,Activities"
+            required
+            class="w-full bg-transparent pl-2 outline-none placeholder-gray-500::placeholder text-xs"
+          />
+        </form>
+
+        <button class="bg-blue-200 pt-1 pb-1 pr-1 pl-1 rounded text-base">
+          <i class="bx bxs-bell"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="flex justify-between pt-10">
+      <div>
+
+        <div class="flex flex-col iterms-center gap-8 pr-4 pl-4">
+          <div data-custom-info="home" class="">
+            <button
+              class="flex items-center text-gray-300 transition text-2xl capitalize font-light gap-1 pt-1 pb-1 pl-3 pr-9 bg-blue-900 hover:text-white rounded-md"
+            >
+              <i class="bx bxs-category"></i><span class="text-xs">home</span>
+            </button>
+          </div>
+
+          <div data-custom-info="home" class="">
+            <button
+              class="flex items-center text-gray-300 transition text-2xl capitalize font-light gap-1 pt-1 pb-1 pl-3 pr-9 hover:bg-blue-900 hover:text-white rounded-md"
+            >
+              <i class="bx bxs-group"></i> <span class="text-xs">courses</span>
+            </button>
+          </div>
+
+          <div data-custom-info="home" class="">
+            <button
+              class="flex items-center text-gray-300 transition text-2xl capitalize font-light gap-1 pt-1 pb-1 pl-3 pr-9 hover:bg-blue-900 hover:text-white rounded-md"
+            >
+              <i class="bx bxs-time"></i> <span class="text-xs">task</span>
+            </button>
+          </div>
+
+          <div data-custom-info="home" class="">
+            <button
+              class="flex items-center text-gray-300 transition text-2xl capitalize font-light gap-1 pt-1 pb-1 pl-3 pr-9 hover:bg-blue-900 hover:text-white rounded-md"
+            >
+              <i class="bx bx-cog"></i> <span class="text-xs">settings</span>
+            </button>
+          </div>
+
+          <div data-custom-info="home" class="">
+            <button
+              class="flex items-center text-gray-300 transition text-2xl capitalize font-light gap-1 pt-1 pb-1 pl-3 pr-9 hover:bg-blue-900 hover:text-white rounded-md"
+            >
+              <i class="bx bx-log-in"></i> <span class="text-xs">logout</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="bg-blue-800 w-11/12 h-44 rounded-3xl pt-8 pb-4 pr-4 pl-4" id="bg-color">
+          <h5 class="text-white text-3xl">
+            Welcome back, Owai <span>👋</span>
+          </h5>
+          <p class="text-xs font-thin text-white pt-3 leading-8">
+            you've learned
+            <span class="text-white text-base font-light">70% </span> of your
+            goals this week <br />
+            keep ot up and improve your progress
+          </p>
+        </div>
+
+        <div class="flex gap-2 mt-10">
+          <div
+            class="border-teal-200 w-40 h-28 bg-teal-50 border-solid border-2 rounded-2xl"
+          >
+            <h4 class="text-blue-700 font-bold text-base pt-8 pl-4">
+              36<br />Task
+            </h4>
+          </div>
+
+          <div
+            class="border-purple-200 w-40 h-28 bg-purple-50 border-solid border-2 rounded-2xl"
+          >
+            <h4 class="text-blue-700 font-bold text-base pt-8 pl-4">
+              15<br />Model
+            </h4>
+          </div>
+
+          <div
+            class="border-custom-200 w-40 h-28 bg-custom-50 border-solid border-2 rounded-2xl"
+          >
+            <h4 class="text-blue-700 font-bold text-base pt-8 pl-4">
+              12<br />Evaluation
+            </h4>
+          </div>
+
+          <div
+            class="border-yellow-200 w-40 h-28 bg-yellow-50 border-solid border-2 rounded-2xl"
+          >
+            <h4 class="text-blue-700 font-bold text-base pt-8 pl-4">
+              1<br />Course
+            </h4>
+          </div>
+        </div>
+
+        <div class="flex items-center w-50 gap-20">
+          <div class="bg-white w-fit pt-4 pb-4 pr-4 pl-4">
+            <div class="flex items-center justify-between pb-6">
+              <p>Performance</p>
+              <p>
+                Overall
+                <span><i class="bx bx-chevron-down text-blue-800"></i></span>
+              </p>
+            </div>
+
+            <table class="border-black">
+              <tr class="border-collapse border-black">
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+              <tr>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+              <tr>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+              <tr>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+              <tr>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+              <tr>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+              <tr>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+              <tr>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+                <th class="border-gray border-solid border-2 w-28 h-6"></th>
+              </tr>
+            </table>
+          </div>
+          <div class="flex flex-col items-center jutify-center ">
+            <h4>completion Progress</h4>
+
+            <div>
+              <i class="bx bx-book-open text-8xl text-gray-300 ml-10"></i>
+              <p class="text-sm text-gray-500 text-center">
+                you haven't started any course <br />yet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white w-80 h-80 pt- pr-4 pl-4 rounded-lg  shadow-lg">
+        <div class="flex items-center justify-between gap-12">
+            <h5 class="text-black font-bold text-base  ">My Progress</h5>
+            <h5 class="text-gray-400 ">AUG 2022</h5>
+        </div>
+        <div>
+            <p class="flex pt-4 items-center justify-between ">
+                <span>Mo</span>
+                <span>Tu</span>
+                <span>We</span>
+                <span>Th</span>
+                <span>Fr</span>
+                <span>Sa</span>
+                <span>Su</span>
+            </p>
+            <div class="mt-10 grid grid-rows-6 grid-cols-8 gap-4">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+                <span>17</span>
+                <span>18</span>
+                <span>19</span>
+                <span>20</span>
+                <span>21</span>
+                <span>22</span>
+                <span>23</span>
+                <span>24</span>
+                <span>25</span>
+                <span>26</span>
+                <span>27</span>
+                <span>28</span>
+                <span>29</span>
+                <span>30</span>
+                <span>31</span>
+            </div>
+        </div>
+    </div>
+    </section>
+  </body>
+</html>

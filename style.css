@@ -1,0 +1,10 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    scroll-behavior: smooth;
+    scroll-padding: 3rem;
+}
+#bg-color {
+    background-color: #00349A;
+    width: 42rem;
+}
